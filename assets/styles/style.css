@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+
+header {
+   display: inline;
+}
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    background-color: #5A27C1;
+    padding: 4px;
+    border: 1px solid currentColor;
+    
+    }
+
+nav a:hover {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main {
+   padding: 20px;
+   overflow: auto;
+   
+}
+
+body {
+    font-family: 'Quicksand',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; 
+ }
+  
+ h2 {
+    color: #00a2c6
+ }
+  
+ h3 {
+    color: #00a2c6
+ }
+
+
+
+/* membuat 3 colomn yang sama */
+.column {
+   float: left;
+   width: 33.33%;
+   padding: 15px;
+ }
+ 
+ /* Clear floats setelah colomn */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+.teacher-img {
+   object-position: center;
+   min-width: 299px;
+   min-height: 299px;
+   max-width: 300px;
+   max-height: 300px;
+}
+
+.card{
+   box-shadow: 10px 10px 20px 0 #1B0B39;
+   border-radius: 10px;
+   padding: 20px ;
+   margin-top: 20px;
+   
+}
+  
+ footer {
+    padding: 20px;
+    color: #4dffff;
+    background-color: #1B0B39;
+    text-align: center;
+    font-weight: bold;
+ }
+
+ .profile header {
+    text-align: center;
+ }
+
+ .profile img {
+   width: 200px;
+}
+
+.jumbotron {
+   font-size: 15px;
+   padding: 15px;
+   background-color: #1B0B39;
+   text-align: center;
+   color: white;
+}
+
+nav li{
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+ }
+
+nav {
+   background-color: #1B0B39;
+   padding: 5px;
+   position: sticky;
+   top: 0;
+     
+}
+
+* {
+   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+.teacher-img {
+   object-position: center;
+   min-width:30px;
+   min-height: 30px;
+   max-width: 80px;
+   max-height: 80px;
+}
+.fotoprofil {
+   max-width: 150px;
+   max-height: 150px;
+}  
+
+nav li{
+   display: inline;
+   list-style-type: none;
+   margin-right: 5px;
+ }
+nav a {
+   font-size: 17px;
+}
+nav a:hover {
+   font-weight: bold;
+   font-size: 17px;
+   color: cyan;
+}
+
+  
+}
+
+.form {
+ 
+   flex-direction: column;
+   width: 13em;
+}
+
+/* animasi input form bergetar */
+@keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+ 
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
+ 
+ .apply-shake {
+     animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+ }
+
